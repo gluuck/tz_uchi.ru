@@ -1,0 +1,5 @@
+SELECT COUNT(id) * FROM students;
+
+SELECT COUNT (*) FROM students WHERE name='Иван'  ;
+
+SELECT COUNT (*) FROM students WHERE created_at BETWEEN '2020-09-01' AND '2021-04-09' ;
