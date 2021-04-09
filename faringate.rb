@@ -5,7 +5,7 @@ class Object
 end
 
 loop do
-  print 'Ведите градусы: '
+  print 'Ведите градусы С или stop для выхода: '
     val = gets.chomp
     break if val == 'stop'
     
