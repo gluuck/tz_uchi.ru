@@ -1,5 +1,6 @@
 def t_light(color)
-  print 'Введите цвет: '
+  loop do
+  print 'Введите цвет red, green, yellow : '
   @color = gets.chomp  
   case @color
     when 'red'
@@ -8,8 +9,11 @@ def t_light(color)
       puts 'идти'
     when 'yellow'
       puts 'ждать'
+    when 'stop'
+      break
     else
-      puts 'Введите цвет'
+      puts 'Введите правильный цвет!'
     end
+  end 
 end
 t_light(@color)
