@@ -8,6 +8,12 @@ arr.each do |h|
   end
 end
 
-puts keys.join(',')
-puts val.join(',')
-puts val.reduce(:+)
+p keys.join(',')
+p val.join(',')
+p val.reduce(:+)
+
+
+
+p arr.map{|h| h.keys }.flatten
+p arr.map{|h| h.values }.flatten
+p arr.map{|h| h.values }.flatten.inject(:+)
