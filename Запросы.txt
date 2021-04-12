@@ -3,3 +3,19 @@ SELECT COUNT(id) * FROM students;
 SELECT COUNT (*) FROM students WHERE name='Иван'  ;
 
 SELECT COUNT (*) FROM students WHERE created_at BETWEEN '2020-09-01' AND '2021-04-09' ;
+
+
+SELECT students.parent_id, parents.id  COUNT (*)
+FROM students
+JOIN parents
+ON students.parent_id = parents.id  ;
+
+SELECT students.parent_id, parents.id  COUNT (*)
+FROM students
+LEFT JOIN parents
+WHERE parents.name = 'Марина'  ;
+
+SELECT students.parent_id, parents.id  COUNT (*)
+FROM students
+LEFT JOIN parents
+WHERE parents.id IS NULL ;
